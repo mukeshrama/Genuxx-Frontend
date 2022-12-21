@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+body{
+  background-color: aquamarine;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputbox{
+  display: block;
+  margin: 25px;
+  margin-left: 100px;
+  padding: 7px;
+  width: 300px;
+  border: 1px solid skyblue;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+  width:200px;
+  height: 40px;
+  border-radius:20px;
+  margin-left: 150px;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.regi{
+  padding-top: 70px;
+  margin-left:180px;
+  
+}
+.main-signup{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left:400px;
+  margin-top: 150px;
+  background-color: aliceblue;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+}
+.logininputbox{
+  display: block;
+  margin: 10px;
+  margin-left: 50px;
+  padding: 8px;
+  width: 300px;
+  border: 1px solid green;
+}
+.login-btn{
+  width:200px;
+  height: 40px;
+  border-radius:20px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+.login{
+  padding-top: 50px;
+  margin-left:150px;  
+}
+.profile-container{
+    display: flex;
+    justify-content:space-between;
+}
+.profile-btn{
+  width:100px;
+  height: 100px;
+  border-radius: 120%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.profile-h3{
+  color: brown;
+  font-size: 40px;
+  margin-left: 20px;
+
+}
+.logout-btn{
+  background-color: black;
   color: white;
+  margin: 5px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.Reset-button{
+  background-color: black;
+  color: white;
+  margin: 5px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detail-container{
+  margin-right: 50px;
 }
