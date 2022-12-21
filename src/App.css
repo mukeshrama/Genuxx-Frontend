@@ -24,10 +24,19 @@ body{
 .main-signup{
   align-items: center;
   margin-left:400px;
+  margin-top: 50px;
+  background-color: aliceblue;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+.main-login{
+  align-items: center;
+  margin-left:400px;
   margin-top: 150px;
   background-color: aliceblue;
   width: 400px;
-  height: 500px;
+  height: 300px;
   border-radius: 10px;
 }
 .logininputbox{

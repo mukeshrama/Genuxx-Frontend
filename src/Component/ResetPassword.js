@@ -23,7 +23,7 @@ export default function ResetPassword(){
         
     }
     return (
-        <div className="main-signup">
+        <div className="main-login">
             <h1 className='login'>Reset</h1>
             <input type="text" className="logininputbox" placeholder="Enter Email" onChange={(e)=>setEmail(e.target.value)} value={email} required/>
             <button className='login-btn' onClick={resetpassword}>Reset Password</button>

@@ -5,23 +5,15 @@ const SignUp=()=>{
     const [display_name,setName]=useState("");
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
-    const [created_at,setCreated_at]=useState("");
+    const [created_at,setCreated_at]=useState(new Date().toLocaleString());
     console.log(created_at);
-    const [updated_at,setUpdated_at]=useState("");
+    const [updated_at,setUpdated_at]=useState(new Date().toLocaleString());
     const role={
         "key":"user",
         "rank":1
     }
     const Navigate=useNavigate();
     const key="LXVNQT";
-    useEffect(()=>{
-        const auth=localStorage.getItem('user');
-        console.log("done")
-        if(auth){
-            setCreated_at(new Date().toLocaleString());
-            setUpdated_at(new Date().toLocaleString());
-        }
-    },[])
     const collectData=async ()=>{
         if(display_name!=="" && email!=='' && password!=='')
         { 
@@ -33,10 +25,12 @@ const SignUp=()=>{
                 }
             });
             result=await result.json();
-            console.warn(result.result.person);
-            localStorage.setItem("user",JSON.stringify(result.result.person))
+            let val={"person":result.result.person};
+            localStorage.setItem("user",JSON.stringify(val))
             localStorage.setItem("token",JSON.stringify(result.result.authentication_token))
+            console.log(localStorage.getItem("user"));
             if(localStorage.getItem("user")!=='undefined'){
+                alert("you have Successfully Created your account")
                 Navigate('/profile')
             }
          }

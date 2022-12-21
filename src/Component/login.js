@@ -33,7 +33,7 @@ const Login=()=>{
         }
     }
     return(
-        <div className="main-signup">
+        <div className="main-login">
              <h1 className='login'>Login</h1>
            <input type="text" className="logininputbox" placeholder="Enter Email" onChange={(e)=>setEmail(e.target.value)} value={email} required/>
            <input type="password" className="logininputbox" placeholder="Enter Password" onChange={(e)=>setPassword(e.target.value) }value={password} required/>
