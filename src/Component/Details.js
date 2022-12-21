@@ -25,7 +25,7 @@ import '../App.css'
                 </div>
                 <div>
                     <h2>Security</h2>
-                    <h2>Account Age</h2>
+                    <h2>last Age</h2>
                     <h3>{user.person.updated_at}</h3>
                 </div>
                 <div>

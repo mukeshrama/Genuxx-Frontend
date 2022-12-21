@@ -17,7 +17,7 @@ const SignUp=()=>{
     const collectData=async ()=>{
         if(display_name!=="" && email!=='' && password!=='')
         { 
-            let result= await fetch('http://localhost:5000/register',{
+            let result= await fetch('https://genux-backendproject.onrender.com/register',{
                 method:'post',
                 body:JSON.stringify({display_name,email,password,created_at,updated_at,role,key}),
                 headers:{

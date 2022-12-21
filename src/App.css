@@ -93,4 +93,9 @@ body{
 }
 .detail-container{
   margin-right: 50px;
+  background-color: gainsboro;
+  height:80vh;
+  width:550px;
+  align-items:"center";
+  padding:50px
 }
