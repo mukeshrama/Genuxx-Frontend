@@ -13,7 +13,7 @@ const Login=()=>{
 },[])
     const handleLogin=async ()=>{
         console.warn("email,password",email,password);
-        let result=await fetch('https://genux-backendproject.onrender.com/login',{
+        let result=await fetch('https://genuxx-backend-wa5x.vercel.app/login',{
             method:'post',
             body:JSON.stringify({email,password}),
             headers:{

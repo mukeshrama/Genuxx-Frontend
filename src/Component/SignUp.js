@@ -17,7 +17,7 @@ const SignUp=()=>{
     const collectData=async ()=>{
         if(display_name!=="" && email!=='' && password!=='')
         { 
-            let result= await fetch('https://genux-backendproject.onrender.com/register',{
+            let result= await fetch('https://genuxx-backend-wa5x.vercel.app/register',{
                 method:'post',
                 body:JSON.stringify({display_name,email,password,created_at,updated_at,role,key}),
                 headers:{

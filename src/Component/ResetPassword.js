@@ -4,7 +4,7 @@ export default function ResetPassword(){
     const Navigate=useNavigate();
     const [email,setEmail]=useState();
     const resetpassword=async ()=>{
-            let result=await fetch('https://genux-backendproject.onrender.com/reset',{
+            let result=await fetch('https://genuxx-backend-wa5x.vercel.app/reset',{
             method:'post',
             body:JSON.stringify({email}),
             headers:{
